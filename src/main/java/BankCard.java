@@ -1,4 +1,4 @@
-public abstract class BankCard {
+public abstract class BankCard implements IScan{
     private String cardNumber;
     private String expiryDate;
     private int securityNumber;
@@ -19,6 +19,10 @@ public abstract class BankCard {
 
     public int getSecurityNumber() {
         return securityNumber;
+    }
+
+    public String scan() {
+        return "Payment Successful";
     }
 
 }
